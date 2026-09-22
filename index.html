@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Anish Jaiswal | AI/ML Research and Software</title>
+<meta name="description" content="Anish Jaiswal is a Computer Science senior at the University of North Texas and undergraduate researcher in the Responsible AI Lab, working on LLM and vision-language model inference.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚛️</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&family=Instrument+Serif&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#F2F5F7; --ink:#15202B; --muted:#586575; --line:#D3DAE1;
+  --cool:#0B6E77; --hot:#C4571B;
+  --serif:"Instrument Serif",Georgia,"Times New Roman",serif;
+  --sans:"Instrument Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+}
+@media (prefers-color-scheme:dark){
+  :root{--bg:#0F1821;--ink:#E4EAF0;--muted:#94A2B1;--line:#26333F;--cool:#4FB3BC;--hot:#F0955A;}
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1.0625rem/1.6 var(--sans)}
+a{color:var(--cool);text-underline-offset:3px}
+a:hover{color:var(--hot)}
+a:focus-visible{outline:2px solid var(--hot);outline-offset:3px;border-radius:2px}
+.wrap{max-width:62rem;margin:0 auto;padding:0 1.5rem}
+header{padding:4.5rem 0 1.5rem}
+h1{font:400 clamp(3.2rem,9vw,6.5rem)/0.95 var(--serif);margin:0;letter-spacing:-0.01em}
+.lede{max-width:38rem;font-size:1.25rem;line-height:1.5;margin:1.5rem 0 0}
+.links{margin:1.25rem 0 0;display:flex;flex-wrap:wrap;gap:0.4rem 1.4rem;font-weight:500}
+.trace{margin:3rem 0 0}
+.trace svg{display:block;width:100%;height:auto;overflow:visible}
+.trace path{fill:none;stroke:url(#heat);stroke-width:2.5;stroke-linecap:round;stroke-dasharray:1400;stroke-dashoffset:1400;animation:draw 2.8s ease-out 0.3s forwards}
+.trace .axis{stroke:var(--line);stroke-width:1}
+.trace figcaption{color:var(--muted);font-size:0.9rem;margin-top:0.6rem;max-width:40rem}
+@keyframes draw{to{stroke-dashoffset:0}}
+@media (prefers-reduced-motion:reduce){.trace path{animation:none;stroke-dashoffset:0}}
+section{display:grid;grid-template-columns:11rem 1fr;gap:1rem 2.5rem;padding:2.75rem 0;border-top:1px solid var(--line)}
+section:first-of-type{margin-top:3rem}
+h2{font:400 1.75rem/1.2 var(--serif);margin:0}
+.body{max-width:42rem}
+.body p{margin:0 0 1rem}
+h3{font:600 1.05rem/1.35 var(--sans);margin:0}
+.meta{color:var(--muted);font-size:0.95rem;margin:0.15rem 0 0.5rem}
+.item{margin-bottom:1.75rem}
+.item:last-child{margin-bottom:0}
+.item p{margin:0}
+dl{margin:0;display:grid;grid-template-columns:10rem 1fr;gap:0.6rem 1.5rem}
+dt{font-weight:600}
+dd{margin:0;color:var(--muted)}
+footer{border-top:1px solid var(--line);padding:2rem 0 3rem;color:var(--muted);font-size:0.9rem}
+@media (max-width:720px){
+  header{padding-top:3rem}
+  section{grid-template-columns:1fr;gap:1rem}
+  dl{grid-template-columns:1fr;gap:0.15rem}
+  dd{margin-bottom:0.7rem}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <h1>Anish Jaiswal</h1>
+  <p class="lede">Computer Science senior at the University of North Texas, minor in Physics. I research how large AI models behave on real hardware in the Responsible AI Lab, and I build full-stack apps that put LLMs to work.</p>
+  <p class="links">
+    <a href="mailto:jslanish01@gmail.com">jslanish01@gmail.com</a>
+    <a href="https://github.com/anish-01">GitHub</a>
+    <a href="https://www.linkedin.com/in/anishjaiswal01/">LinkedIn</a>
+  </p>
+  <figure class="trace">
+    <svg viewBox="0 0 1000 160" role="img" aria-label="A curve that rises steeply and then levels off, like a GPU warming up under sustained load">
+      <defs>
+        <linearGradient id="heat" x1="0" x2="1" y1="0" y2="0">
+          <stop offset="0" stop-color="var(--cool)"/>
+          <stop offset="1" stop-color="var(--hot)"/>
+        </linearGradient>
+      </defs>
+      <line class="axis" x1="0" y1="150" x2="1000" y2="150"/>
+      <path d="M0,140 C60,138 90,120 140,96 S230,52 300,40 S400,30 460,34 S540,26 600,30 S680,22 740,27 S830,20 880,24 S960,19 1000,21"/>
+    </svg>
+    <figcaption>Illustration: GPU temperature climbing and settling under sustained load. Whether that heat changes how fast models answer is the question behind my current research.</figcaption>
+  </figure>
+</header>
+
+<main>
+<section id="research">
+  <h2>Research</h2>
+  <div class="body">
+    <div class="item">
+      <h3>Undergraduate Research Assistant, Responsible AI Lab</h3>
+      <p class="meta">University of North Texas, Sept. 2026 to present</p>
+      <p>I'm designing an NVIDIA-sponsored study of how sustained thermal load affects vision-language model inference on the NVIDIA DGX Spark, across open-weight models from 2B to 72B parameters. I'm building a Python harness that lines up per-request latency (time to first token, throughput) with GPU telemetry sampled once a second: temperature, clock speed, power, and memory. The harness will be released as open source.</p>
+    </div>
+  </div>
+</section>
+
+<section id="direction">
+  <h2>Where I'm headed</h2>
+  <div class="body">
+    <p>I want to specialize in AI and machine learning, with a focus on making large models reliable and trustworthy. Longer term, I plan to pursue quantum machine learning, where my computer science and physics training meet. Robotics is the third thread: I started with hardware, and I want to build intelligent systems that act in the physical world.</p>
+  </div>
+</section>
+
+<section id="projects">
+  <h2>Projects</h2>
+  <div class="body">
+    <div class="item">
+      <h3><a href="https://github.com/anish-01/hiremate-ai-interview-coach">HireMate, an AI interview coach</a></h3>
+      <p class="meta">Project lead. React, Node.js, Express, Firebase, Claude and OpenAI APIs</p>
+      <p>A web app that runs mock interviews: LLMs generate role-specific questions, evaluate each answer, and track progress over time. I led the team, designed the prompt workflows, and delivered sprint demos and a usability testing report.</p>
+    </div>
+    <div class="item">
+      <h3>HandyDad</h3>
+      <p class="meta">Senior capstone with team Visionary Creators, in progress</p>
+      <p>Our year-long capstone project at UNT.</p>
+    </div>
+    <div class="item">
+      <h3>QUECOURT, a court records database</h3>
+      <p class="meta">MySQL</p>
+      <p>A relational database for federal court records, built from ER modeling through schemas, stored procedures, triggers, and complex queries that turn raw records into query-ready data.</p>
+    </div>
+    <div class="item">
+      <h3>Agriculture robot</h3>
+      <p class="meta">Arduino, C++, IoT sensors</p>
+      <p>A prototype robot for automated seeding, watering, and soil monitoring with moisture sensors, controlled remotely from a C++ application I refined through repeated field testing.</p>
+    </div>
+    <div class="item">
+      <h3>Traffic incident driver management system</h3>
+      <p class="meta">C++</p>
+      <p>A record system built on custom hash tables and linked lists, giving constant-time average search along with driver categorization, license tracking, and record migration.</p>
+    </div>
+  </div>
+</section>
+
+<section id="experience">
+  <h2>Experience</h2>
+  <div class="body">
+    <div class="item">
+      <h3>Assistant Project Designer, Robotics Association of Nepal</h3>
+      <p class="meta">Lalitpur, Nepal, Sept. 2021 to Feb. 2022</p>
+      <p>Worked on robotics and automation projects across programming, hardware integration, testing, and troubleshooting.</p>
+    </div>
+    <div class="item">
+      <h3>Hardware Repair Technician, Aayan Computer Repairing Center</h3>
+      <p class="meta">Kalaiya, Nepal, Apr. 2019 to Apr. 2020</p>
+      <p>Diagnosed and repaired desktops and laptops, set up operating systems and software, and supported customers directly.</p>
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <h2>Skills</h2>
+  <div class="body">
+    <dl>
+      <dt>Languages</dt><dd>Python, C++, C, JavaScript, SQL</dd>
+      <dt>AI and ML</dt><dd>LLM and vision-language inference, Ollama, vLLM, Hugging Face, prompt engineering, NumPy, Pandas, scikit-learn</dd>
+      <dt>Research</dt><dd>Experimental design, controlled comparisons, confidence intervals, latency and throughput benchmarking, GPU telemetry</dd>
+      <dt>Software</dt><dd>React, Node.js, Firebase, MySQL, REST APIs, data structures and algorithms</dd>
+      <dt>Robotics</dt><dd>Arduino, moisture and IoT sensors, hardware integration, embedded systems</dd>
+      <dt>Tools</dt><dd>Linux, SSH, tmux, shell scripting, Git, VS Code</dd>
+    </dl>
+  </div>
+</section>
+
+<section id="education">
+  <h2>Education</h2>
+  <div class="body">
+    <div class="item">
+      <h3>B.S. in Computer Science, minor in Physics</h3>
+      <p class="meta">University of North Texas, Denton, TX. Expected May 2027</p>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <p>Dallas, Texas. Reach me at <a href="mailto:jslanish01@gmail.com">jslanish01@gmail.com</a>.</p>
+</footer>
+</div>
+</body>
+</html>
